@@ -2,6 +2,7 @@
 # Introduction to GitHub Actions
 
 This repository provides a hands-on introduction to GitHub Actions, featuring a workflow file walkthrough, as well as labs to help you create, set up, and troubleshoot GitHub Actions.
+- [Watch this awesome video](https://youtu.be/mFFXuXjVgkU?si=W2NR_oh4FCbZXlhv)
 
 ## Project Overview
 
