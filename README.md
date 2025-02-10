@@ -21,6 +21,10 @@ In this project, you will learn how to use GitHub Actions to automate workflows.
 2. Click add create new file
 3. Create directory structure: your_repo/.github/workflows/superlinter.yml
 4. Make sure the directory structure follows the format above!
+5. Copy and paste the YAML code below
+6. Commit file to main
+7. Quickly navigate back to your repository and click the Actions tab at the top
+8. Here you can see your workflow running! Click it to see what it’s doing (it should be setting up the job or linting).
 
 The repository includes a GitHub Actions workflow file to lint the codebase using the Super Linter. Below is the content of the `.yml` workflow file:
 
@@ -100,4 +104,31 @@ The steps section contains the sequence of tasks to be executed within the job. 
    - DEFAULT_BRANCH: Specifies the default branch (in this case, main).
    - GITHUB_TOKEN: A secure token that allows the workflow to interact with the GitHub       API. It’s automatically populated by GitHub secrets.
  
-#
+### Python Code Example
+Now we can test if the linter is working. Add a new python file (main.py) to main and copy paste the following code:
+
+The following is the draft version of the Python script main.py:
+
+```python
+def hello():
+    print("hi")
+def bye():
+   print("bye")
+print(hello())
+```
+
+#### Code Breakdown
+- hello(): Prints "hi" to the console.
+- bye(): Prints "bye" to the console.
+- print(hello()): Calls the hello() function and prints its return value, which is None since hello() does not return anything
+
+Commit the python file to main and then quickly navigate back to the actions tab. Click the latest workflow run at the top of the list then click the lint codebase job and watch the automation in action!
+
+### Troubleshooting Workflows
+If you encounter any issues while running the workflows, make sure to check the Actions tab in your GitHub repository. Common issues may include:
+   - Incorrect branch name in the DEFAULT_BRANCH environment variable.
+   - Issues with GitHub token permissions.
+For troubleshooting, you can also check the logs for specific error messages.
+
+### Contributing
+If you would like to contribute to this project, feel free to fork the repository and submit a pull request. We welcome any contributions that improve the functionality or documentation of the project.
