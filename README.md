@@ -8,19 +8,19 @@ This repository provides a hands-on introduction to GitHub Actions, featuring a 
 In this project, you will learn how to use GitHub Actions to automate workflows. The following components are included:
 
 1. **GitHub Actions Workflow File Walkthrough**  
-   An explanation of the basic components and structure of a GitHub Actions workflow.
-      1. Create GitHub repository.
-      2. Click add file
-      3. Create directory structure: your_repo/.github/workflows/superlinter.yml
-      4. Make sure the directory structure follows the format above!
+   An explanation of the basic components and structure of a GitHub Actions workflow
 
-3. **GitHub Actions Lab - Creating Repository and Setting up Action**  
+2. **GitHub Actions Lab - Creating Repository and Setting up Action**  
    Step-by-step guide for creating a GitHub repository and setting up a basic GitHub Action.
 
-4. **GitHub Actions Lab - Running and Troubleshooting Workflows**  
+3. **GitHub Actions Lab - Running and Troubleshooting Workflows**  
    A guide to running workflows and troubleshooting common issues.
 
 ## GitHub Actions Workflow
+1. Create GitHub repository.
+2. Click add create new file
+3. Create directory structure: your_repo/.github/workflows/superlinter.yml
+4. Make sure the directory structure follows the format above!
 
 The repository includes a GitHub Actions workflow file to lint the codebase using the Super Linter. Below is the content of the `.yml` workflow file:
 
@@ -99,3 +99,5 @@ The steps section contains the sequence of tasks to be executed within the job. 
 - It sets two environment variables:
    - DEFAULT_BRANCH: Specifies the default branch (in this case, main).
    - GITHUB_TOKEN: A secure token that allows the workflow to interact with the GitHub       API. It’s automatically populated by GitHub secrets.
+ 
+#
