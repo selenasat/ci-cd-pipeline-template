@@ -124,6 +124,25 @@ print(hello())
 
 Commit the python file to main and then quickly navigate back to the actions tab. Click the latest workflow run at the top of the list then click the lint codebase job and watch the automation in action!
 
+The linter should fail. To check the errors scroll down to the Run Super-Linter section. 
+
+Fix the errors and commit your python file again. The lint code base job should succeed.
+
+```python
+def hello():
+    print("hi")
+
+
+def bye():
+    print("bye")
+
+
+print(hello())
+```
+Congratulations! You implemented continuous integration using GitHub Actions!
+
+From here you could deploy a continuous deployment workflow that automatically deploys your code to a server, docker image, or something else. Thanks for participating!
+
 ### Troubleshooting Workflows
 If you encounter any issues while running the workflows, make sure to check the Actions tab in your GitHub repository. Common issues may include:
    - Incorrect branch name in the DEFAULT_BRANCH environment variable.
