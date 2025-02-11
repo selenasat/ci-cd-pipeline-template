@@ -145,7 +145,7 @@ Commit the Python file to main and then quickly navigate back to the Actions tab
 
 The linter should fail. To check the errors, scroll down to the Run Super-Linter section.
 
-Fix the errors and commit your Python file again. The lint code base job should succeed.
+Fix the errors and commit your Python file again. The lint codebase job should succeed.
 
 ```python
 def hello():
